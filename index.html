@@ -5,35 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Jovel C. Cañada</title>
     <style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f7f9fc;
             color: #333;
+            line-height: 1.6;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
         header {
+            background: #007BFF;
+            color: #fff;
             text-align: center;
-            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
         }
-        .personal-info, .skills, .experience, .education, .certifications, .trainings {
-            margin-bottom: 20px;
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+        header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border: 3px solid #fff;
+        }
+        section {
+            padding: 20px;
         }
         .section-title {
             font-size: 1.5rem;
-            border-bottom: 2px solid #3498db;
+            color: #007BFF;
             margin-bottom: 10px;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
         }
         ul {
             list-style: none;
@@ -42,29 +64,49 @@
         ul li {
             margin-bottom: 10px;
         }
-        .skills ul li {
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills Section */
+        .skills li {
             display: inline-block;
-            background: #e0e0e0;
+            background: #e9ecef;
             color: #333;
             padding: 5px 10px;
             margin: 5px;
             border-radius: 5px;
             font-size: 0.9rem;
         }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 10px;
-            background: #3498db;
+            background: #007BFF;
             color: #fff;
             margin-top: 20px;
-            border-radius: 8px;
         }
+
+        /* Responsive Design */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
             }
             .container {
-                padding: 15px;
+                padding: 10px;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header img {
+                margin-right: 0;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -72,12 +114,16 @@
 <body>
     <div class="container">
         <header>
-            <h1>Jovel C. Cañada</h1>
-            <p>Address: Sitio D.A M. Velez St., Cebu City</p>
-            <p>Mobile: 09295552649 | Email: <a href="mailto:jovelcanyada143@gmail.com">jovelcanyada143@gmail.com</a></p>
+            <!-- Replace the src attribute with your image URL -->
+            <img src="https://example.com/your-image.jpg" alt="Jovel C. Cañada">
+            <div>
+                <h1>Jovel C. Cañada</h1>
+                <p>Address: Sitio D.A M. Velez St., Cebu City</p>
+                <p>Mobile: 09295552649 | Email: <a href="mailto:jovelcanyada143@gmail.com">jovelcanyada143@gmail.com</a></p>
+            </div>
         </header>
 
-        <section class="personal-info">
+        <section>
             <h2 class="section-title">Personal Information</h2>
             <ul>
                 <li><strong>Age:</strong> 31</li>
@@ -87,46 +133,57 @@
             </ul>
         </section>
 
-        <section class="education">
+        <section>
             <h2 class="section-title">Educational Attainment</h2>
             <ul>
                 <li><strong>Bachelor of Science in Information Technology</strong></li>
-                <li>Interface Computer College - CEBU</li>
+                <li>Interface Computer College - Cebu</li>
                 <li>March 2015</li>
             </ul>
         </section>
 
-        <section class="experience">
-            <h2 class="section-title">Work Experience</h2>
+        <section>
+            <h2 class="section-title">Work Experiences</h2>
             <ul>
-                <li><strong>IT Staff/Technician</strong> - Department of Agriculture Regional Field Office 7 (July 2015 – Dec 2015)</li>
-                <li><strong>IT Desktop Support</strong> - Libsales Industrial Parts & Gen. MDSE (March 2015 - March 2016)</li>
-                <li><strong>Technical Support Specialist</strong> - Verizon (July 2016 - May 2017)</li>
-                <li><strong>Website Hosting Support/Technical Support Specialist</strong> - 1&1 IONOS Phils., Inc. (April 2017 - September 2021)</li>
-                <li><strong>IT Helpdesk</strong> - Offensive Security Certifications, Inc. (Oct 2021 – Apr 2022)</li>
-                <li><strong>IT DevOps Technician</strong> - Offensive Security Certifications, Inc. (Apr 2022 – Present)</li>
+                <li><strong>IT Staff/Technician</strong> - Department of Agriculture Regional Field Office 7<br>
+                    <em>July 2015 – Dec 2015</em>
+                </li>
+                <li><strong>IT Desktop Support</strong> - Libsales Industrial Parts & Gen. MDSE<br>
+                    <em>March 2015 - March 2016</em>
+                </li>
+                <li><strong>Technical Support Specialist</strong> - Verizon<br>
+                    <em>July 2016 - May 2017</em>
+                </li>
+                <li><strong>Website Hosting Support/Technical Support Specialist</strong> - 1&1 IONOS Phils., Inc.<br>
+                    <em>April 2017 - September 2021</em>
+                </li>
+                <li><strong>IT Helpdesk</strong> - Offensive Security Certifications, Inc.<br>
+                    <em>Oct 2021 – Apr 2022</em>
+                </li>
+                <li><strong>IT DevOps Technician</strong> - Offensive Security Certifications, Inc.<br>
+                    <em>Apr 2022 – Present</em>
+                </li>
             </ul>
         </section>
 
-        <section class="skills">
+        <section>
             <h2 class="section-title">Skills</h2>
-            <ul>
+            <ul class="skills">
                 <li>Install Computer Systems and Networks</li>
-                <li>Diagnose and Troubleshoot Computer Systems</li>
-                <li>Configure Computer Systems and Networks</li>
-                <li>Maintain and Optimize Computer Systems</li>
-                <li>Install operating systems: Windows, Linux, and Mac</li>
-                <li>Configure email clients (Outlook, Thunderbird, Mac Email)</li>
-                <li>Printer troubleshooting and installation</li>
-                <li>Configure routers, switches, and access points</li>
-                <li>Adobe Photoshop and Adobe Premiere</li>
-                <li>WordPress configuration and CMS migration</li>
-                <li>Troubleshoot VMware vCenter</li>
-                <li>Proficient in GitLab</li>
+                <li>Diagnose and Troubleshoot Systems</li>
+                <li>Configure Systems and Networks</li>
+                <li>Install Windows, Linux, and Mac</li>
+                <li>Configure Email Clients (Outlook, Thunderbird, Mac Email)</li>
+                <li>Printer Troubleshooting</li>
+                <li>Configure Routers, Switches, and Access Points</li>
+                <li>Adobe Photoshop & Premiere</li>
+                <li>WordPress CMS Management</li>
+                <li>VMware vCenter Troubleshooting</li>
+                <li>GitLab</li>
             </ul>
         </section>
 
-        <section class="trainings">
+        <section>
             <h2 class="section-title">Seminars and Trainings Attended</h2>
             <ul>
                 <li>Troubleshooting Common PC Issues for Users (LinkedIn Learning)</li>
@@ -138,7 +195,7 @@
             </ul>
         </section>
 
-        <section class="certifications">
+        <section>
             <h2 class="section-title">Certifications</h2>
             <ul>
                 <li>Troubleshooting IT Remote Administration (LinkedIn)</li>
@@ -148,7 +205,7 @@
     </div>
 
     <footer>
-        <p>Jovel C. Cañada | Cebu City, Philippines</p>
+        <p>&copy; 2025 Jovel C. Cañada | Cebu City, Philippines</p>
     </footer>
 </body>
 </html>
