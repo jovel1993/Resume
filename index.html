@@ -3,54 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
+    <title>Resume - Jovel C. Cañada</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
         }
-        .section {
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .personal-info, .skills, .experience, .education, .certifications, .trainings {
             margin-bottom: 20px;
         }
         .section-title {
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #3498db;
             margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .skills ul li {
+            display: inline-block;
+            background: #e0e0e0;
+            color: #333;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #3498db;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p>Contact: your.email@example.com | Phone: (123) 456-7890</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <div class="container">
+        <header>
+            <h1>Jovel C. Cañada</h1>
+            <p>Address: Sitio D.A M. Velez St., Cebu City</p>
+            <p>Mobile: 09295552649 | Email: <a href="mailto:jovelcanyada143@gmail.com">jovelcanyada143@gmail.com</a></p>
+        </header>
 
-    <div class="section">
-        <div class="section-title">Summary</div>
-        <p>A brief summary of your skills and experience.</p>
+        <section class="personal-info">
+            <h2 class="section-title">Personal Information</h2>
+            <ul>
+                <li><strong>Age:</strong> 31</li>
+                <li><strong>Height:</strong> 5’6”</li>
+                <li><strong>Birth Date:</strong> October 12, 1993</li>
+                <li><strong>Birth Place:</strong> Cebu City, Philippines</li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2 class="section-title">Educational Attainment</h2>
+            <ul>
+                <li><strong>Bachelor of Science in Information Technology</strong></li>
+                <li>Interface Computer College - CEBU</li>
+                <li>March 2015</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <ul>
+                <li><strong>IT Staff/Technician</strong> - Department of Agriculture Regional Field Office 7 (July 2015 – Dec 2015)</li>
+                <li><strong>IT Desktop Support</strong> - Libsales Industrial Parts & Gen. MDSE (March 2015 - March 2016)</li>
+                <li><strong>Technical Support Specialist</strong> - Verizon (July 2016 - May 2017)</li>
+                <li><strong>Website Hosting Support/Technical Support Specialist</strong> - 1&1 IONOS Phils., Inc. (April 2017 - September 2021)</li>
+                <li><strong>IT Helpdesk</strong> - Offensive Security Certifications, Inc. (Oct 2021 – Apr 2022)</li>
+                <li><strong>IT DevOps Technician</strong> - Offensive Security Certifications, Inc. (Apr 2022 – Present)</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Install Computer Systems and Networks</li>
+                <li>Diagnose and Troubleshoot Computer Systems</li>
+                <li>Configure Computer Systems and Networks</li>
+                <li>Maintain and Optimize Computer Systems</li>
+                <li>Install operating systems: Windows, Linux, and Mac</li>
+                <li>Configure email clients (Outlook, Thunderbird, Mac Email)</li>
+                <li>Printer troubleshooting and installation</li>
+                <li>Configure routers, switches, and access points</li>
+                <li>Adobe Photoshop and Adobe Premiere</li>
+                <li>WordPress configuration and CMS migration</li>
+                <li>Troubleshoot VMware vCenter</li>
+                <li>Proficient in GitLab</li>
+            </ul>
+        </section>
+
+        <section class="trainings">
+            <h2 class="section-title">Seminars and Trainings Attended</h2>
+            <ul>
+                <li>Troubleshooting Common PC Issues for Users (LinkedIn Learning)</li>
+                <li>DevOps Foundations (LinkedIn Learning)</li>
+                <li>IT Remote Administration (LinkedIn Learning)</li>
+                <li>DevOps Essentials (A Cloud Guru)</li>
+                <li>Learning VMware vSphere 6.5 (LinkedIn Learning)</li>
+                <li>Cybersecurity and Linux Web Server Opportunities (Interface Computer College)</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <li>Troubleshooting IT Remote Administration (LinkedIn)</li>
+                <li>Network Penetration Testing Essentials (OffSec)</li>
+            </ul>
+        </section>
     </div>
 
-    <div class="section">
-        <div class="section-title">Experience</div>
-        <p><strong>Job Title</strong> - Company Name (Year - Year)</p>
-        <ul>
-            <li>Key responsibility or achievement.</li>
-            <li>Another responsibility or achievement.</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education</div>
-        <p>Degree - University Name (Year)</p>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Skills</div>
-        <p>List your key skills here (e.g., programming, design, etc.).</p>
-    </div>
+    <footer>
+        <p>Jovel C. Cañada | Cebu City, Philippines</p>
+    </footer>
 </body>
 </html>
